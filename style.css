@@ -1,0 +1,267 @@
+:root {
+--cobaltblue: hsl(215 100% 33.5%);
+--burntorange: hsl(21 96.4% 43.3%);
+--softgray: hsl(0 0% 96.1%);
+--slategray: hsl(210 12.6% 50.2%);
+--offwhite: hsl(0 0% 99.2%);
+--emeraldgreen: hsl(140 52.2% 54.9%);
+--goldenyellow: hsl(51 100% 50%);
+--crimsonred: hsl(348 83.3% 47.1%);
+
+--base-size: 1rem;
+--scale: 1.2;
+--h1: calc(var(--h2) * var(--scale));
+--h2: calc(var(--h3) * var(--scale));
+--h3: calc(var(--h4) * var(--scale));
+--h4: calc(var(--h5) * var(--scale));
+--h5: calc(var(--h6) * var(--scale));
+--h6: var(--base-size);;
+
+--main: "Lora", serif;
+--headings: "Poppins", sans-serif;
+--aceent: "Raleway", sans-serif;
+
+.lora-regular {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.lora-bold {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+.raleway-light {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+}
+
+
+h1 {
+    font-size: var(--h1);
+  }
+  
+  h2 {
+    font-size: var(--h2);
+  }
+  
+  h3 {
+    font-size: var(--h3);
+  }
+  
+  h4 {
+    font-size: var(--h4);
+  }
+  
+  h5 {
+    font-size: var(--h5);
+  }
+  
+  h6 {
+    font-size: var(--h6);
+  }
+  
+  a{
+    color: var(--burntorange);
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%
+  }
+  
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    font-family: var(--main);
+    margin: 0;
+    padding: 0;
+    font-size: var(--base-size);
+    line-height: 1.5;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: var(--headings);
+    text-transform: uppercase;
+  }
+  
+
+
+
+.colors {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .colors > * {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+  }
+  
+
+.cobaltblue {
+    background-color: var(--cobaltblue);
+}
+
+.burntorange {
+    background-color: var(--burntorange);
+}
+
+.softgray {
+    background-color: var(--softgray);
+}
+
+.slategray{
+    background-color: var(--slategray);
+}
+
+.offwhite {
+    background-color: var(--offwhite);
+}
+
+.emeraldgreen {
+    background-color: var(--emeraldgreen);
+}
+
+.goldenyellow {
+    background-color: var(--goldenyellow);
+}
+
+.crimsonred {
+    background-color: var(--crimsonred);
+}
+
+.black {
+    background-color: black;
+}

@@ -3,3 +3,35 @@
 @tailwind utilities;
 
 
+@layer base {
+  :root {
+    --cobaltblue: 215deg 100% 33.5%;
+    --burntorange: 21deg 96.4% 43.4%;
+    --softgray: 0deg 0% 96.1%;
+    --slategray: 210deg 12.6% 50.2%;
+    --offwhite: 0deg 0% 99.2%;
+    --emeraldgreen: 140deg 52.2% 54.9%;
+    --goldenyellow: 51deg 100% 50%;
+    --crimsonred: 348deg 83.3% 47.1%;
+  }
+}
+
+body {
+  @apply bg-offwhite text-slategray dark:bg-slategray dark:text-offwhite transition-colors duration-300;
+}
+
+
+.sticky-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.1 ease-in-out;
+}
+
+@supports not (backdrop-filter: none) {
+  .sticky-nav {
+    backdrop-filter: none;
+    @apply bg-opacity-100;
+  }
+}
